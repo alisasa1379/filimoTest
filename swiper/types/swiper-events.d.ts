@@ -1,27 +1,27 @@
-import type { SwiperOptions } from './swiper-options.d.ts';
-import type Swiper from './swiper-class.d.ts';
+import type { SwiperOptions } from "./swiper-options";
+import type Swiper from "./swiper-class";
 
-import type { A11yEvents } from './modules/a11y.d.ts';
-import type { AutoplayEvents } from './modules/autoplay.d.ts';
-import type { ControllerEvents } from './modules/controller.d.ts';
-import type { CoverflowEffectEvents } from './modules/effect-coverflow.d.ts';
-import type { CubeEffectEvents } from './modules/effect-cube.d.ts';
-import type { FadeEffectEvents } from './modules/effect-fade.d.ts';
-import type { FlipEffectEvents } from './modules/effect-flip.d.ts';
-import type { CreativeEffectEvents } from './modules/effect-creative.d.ts';
-import type { CardsEffectEvents } from './modules/effect-cards.d.ts';
-import type { HashNavigationEvents } from './modules/hash-navigation.d.ts';
-import type { HistoryEvents } from './modules/history.d.ts';
-import type { KeyboardEvents } from './modules/keyboard.d.ts';
-import type { MousewheelEvents } from './modules/mousewheel.d.ts';
-import type { NavigationEvents } from './modules/navigation.d.ts';
-import type { PaginationEvents } from './modules/pagination.d.ts';
-import type { ParallaxEvents } from './modules/parallax.d.ts';
-import type { ScrollbarEvents } from './modules/scrollbar.d.ts';
-import type { ThumbsEvents } from './modules/thumbs.d.ts';
-import type { VirtualEvents } from './modules/virtual.d.ts';
-import type { ZoomEvents } from './modules/zoom.d.ts';
-import type { FreeModeEvents } from './modules/free-mode.d.ts';
+import type { A11yEvents } from "./modules/a11y";
+import type { AutoplayEvents } from "./modules/autoplay";
+import type { ControllerEvents } from "./modules/controller";
+import type { CoverflowEffectEvents } from "./modules/effect-coverflow";
+import type { CubeEffectEvents } from "./modules/effect-cube";
+import type { FadeEffectEvents } from "./modules/effect-fade";
+import type { FlipEffectEvents } from "./modules/effect-flip";
+import type { CreativeEffectEvents } from "./modules/effect-creative";
+import type { CardsEffectEvents } from "./modules/effect-cards";
+import type { HashNavigationEvents } from "./modules/hash-navigation";
+import type { HistoryEvents } from "./modules/history";
+import type { KeyboardEvents } from "./modules/keyboard";
+import type { MousewheelEvents } from "./modules/mousewheel";
+import type { NavigationEvents } from "./modules/navigation";
+import type { PaginationEvents } from "./modules/pagination";
+import type { ParallaxEvents } from "./modules/parallax";
+import type { ScrollbarEvents } from "./modules/scrollbar";
+import type { ThumbsEvents } from "./modules/thumbs";
+import type { VirtualEvents } from "./modules/virtual";
+import type { ZoomEvents } from "./modules/zoom";
+import type { FreeModeEvents } from "./modules/free-mode";
 
 export interface SwiperEvents {
   // CORE_EVENTS_START
@@ -115,32 +115,50 @@ export interface SwiperEvents {
   /**
    * Event will be fired when user touch Swiper. Receives `pointerdown` event as an arguments.
    */
-  touchStart: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  touchStart: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user touch and move finger over Swiper. Receives `pointermove` event as an arguments.
    */
-  touchMove: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  touchMove: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user touch and move finger over Swiper in direction opposite to direction parameter. Receives `pointermove` event as an arguments.
    */
-  touchMoveOpposite: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  touchMoveOpposite: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user touch and move finger over Swiper and move it. Receives `pointermove` event as an arguments.
    */
-  sliderMove: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  sliderMove: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user release Swiper. Receives `pointerup` event as an arguments.
    */
-  touchEnd: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  touchEnd: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user click/tap on Swiper. Receives `pointerup` event as an arguments.
    */
-  click: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  click: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when user click/tap on Swiper. Receives `pointerup` event as an arguments.
@@ -150,7 +168,10 @@ export interface SwiperEvents {
   /**
    * Event will be fired when user double tap on Swiper's container. Receives `pointerup` event as an arguments
    */
-  doubleTap: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  doubleTap: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired when Swiper progress is changed, as an arguments it receives progress that is always from 0 to 1
@@ -225,14 +246,18 @@ export interface SwiperEvents {
   /**
    * !INTERNAL: Event will fired after setting CSS classes on swiper slide element
    */
-  _slideClass?: (swiper: Swiper, slideEl: HTMLElement, classNames: string) => void;
+  _slideClass?: (
+    swiper: Swiper,
+    slideEl: HTMLElement,
+    classNames: string
+  ) => void;
 
   /**
    * !INTERNAL: Event will fired after setting CSS classes on all swiper slides
    */
   _slideClasses?: (
     swiper: Swiper,
-    slides: { slideEl: HTMLElement; classNames: string; index: number }[],
+    slides: { slideEl: HTMLElement; classNames: string; index: number }[]
   ) => void;
 
   /**
@@ -284,7 +309,10 @@ export interface SwiperEvents {
   /**
    * Event will be fired when user double click/tap on Swiper
    */
-  doubleClick: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  doubleClick: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
   /**
    * Event will be fired on swiper destroy
    */

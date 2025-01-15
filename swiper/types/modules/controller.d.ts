@@ -1,4 +1,4 @@
-import type Swiper from '../swiper-class.d.ts';
+import type Swiper from "../swiper-class";
 
 export interface ControllerMethods {
   /**
@@ -31,5 +31,5 @@ export interface ControllerOptions {
    *
    * @default 'slide'
    */
-  by?: 'slide' | 'container';
+  by?: "slide" | "container";
 }

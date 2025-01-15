@@ -1,5 +1,5 @@
-import type { CSSSelector } from '../shared.d.ts';
-import type Swiper from '../swiper-class.d.ts';
+import type { CSSSelector } from "../shared";
+import type Swiper from "../swiper-class";
 
 export interface PaginationMethods {
   /**
@@ -74,7 +74,7 @@ export interface PaginationOptions {
    *
    * @default 'bullets'
    */
-  type?: 'bullets' | 'fraction' | 'progressbar' | 'custom';
+  type?: "bullets" | "fraction" | "progressbar" | "custom";
 
   /**
    * Defines which HTML tag will be used to represent single pagination bullet. Only for `'bullets'` pagination type.

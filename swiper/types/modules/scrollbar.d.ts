@@ -1,5 +1,5 @@
-import type { CSSSelector } from '../shared.d.ts';
-import type Swiper from '../swiper-class.d.ts';
+import type { CSSSelector } from "../shared";
+import type Swiper from "../swiper-class";
 
 export interface ScrollbarMethods {
   /**
@@ -37,17 +37,26 @@ export interface ScrollbarEvents {
   /**
    * Event will be fired on draggable scrollbar drag start
    */
-  scrollbarDragStart: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  scrollbarDragStart: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired on draggable scrollbar drag move
    */
-  scrollbarDragMove: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  scrollbarDragMove: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 
   /**
    * Event will be fired on draggable scrollbar drag end
    */
-  scrollbarDragEnd: (swiper: Swiper, event: MouseEvent | TouchEvent | PointerEvent) => void;
+  scrollbarDragEnd: (
+    swiper: Swiper,
+    event: MouseEvent | TouchEvent | PointerEvent
+  ) => void;
 }
 
 /**
@@ -101,7 +110,7 @@ export interface ScrollbarOptions {
    *
    * @default 'auto'
    */
-  dragSize?: 'auto' | number;
+  dragSize?: "auto" | number;
 
   /**
    * Scrollbar element additional CSS class when it is disabled

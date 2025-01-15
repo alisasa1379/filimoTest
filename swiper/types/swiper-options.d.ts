@@ -1,28 +1,28 @@
-import type { A11yOptions } from './modules/a11y.d.ts';
-import type { AutoplayOptions } from './modules/autoplay.d.ts';
-import type { ControllerOptions } from './modules/controller.d.ts';
-import type { CoverflowEffectOptions } from './modules/effect-coverflow.d.ts';
-import type { CubeEffectOptions } from './modules/effect-cube.d.ts';
-import type { FadeEffectOptions } from './modules/effect-fade.d.ts';
-import type { FlipEffectOptions } from './modules/effect-flip.d.ts';
-import type { CreativeEffectOptions } from './modules/effect-creative.d.ts';
-import type { CardsEffectOptions } from './modules/effect-cards.d.ts';
-import type { HashNavigationOptions } from './modules/hash-navigation.d.ts';
-import type { HistoryOptions } from './modules/history.d.ts';
-import type { KeyboardOptions } from './modules/keyboard.d.ts';
-import type { MousewheelOptions } from './modules/mousewheel.d.ts';
-import type { NavigationOptions } from './modules/navigation.d.ts';
-import type { PaginationOptions } from './modules/pagination.d.ts';
-import type { ParallaxOptions } from './modules/parallax.d.ts';
-import type { ScrollbarOptions } from './modules/scrollbar.d.ts';
-import type { ThumbsOptions } from './modules/thumbs.d.ts';
-import type { VirtualOptions } from './modules/virtual.d.ts';
-import type { ZoomOptions } from './modules/zoom.d.ts';
-import type { FreeModeOptions } from './modules/free-mode.d.ts';
-import type { GridOptions } from './modules/grid.d.ts';
+import type { A11yOptions } from "./modules/a11y";
+import type { AutoplayOptions } from "./modules/autoplay";
+import type { ControllerOptions } from "./modules/controller";
+import type { CoverflowEffectOptions } from "./modules/effect-coverflow";
+import type { CubeEffectOptions } from "./modules/effect-cube";
+import type { FadeEffectOptions } from "./modules/effect-fade";
+import type { FlipEffectOptions } from "./modules/effect-flip";
+import type { CreativeEffectOptions } from "./modules/effect-creative";
+import type { CardsEffectOptions } from "./modules/effect-cards";
+import type { HashNavigationOptions } from "./modules/hash-navigation";
+import type { HistoryOptions } from "./modules/history";
+import type { KeyboardOptions } from "./modules/keyboard";
+import type { MousewheelOptions } from "./modules/mousewheel";
+import type { NavigationOptions } from "./modules/navigation";
+import type { PaginationOptions } from "./modules/pagination";
+import type { ParallaxOptions } from "./modules/parallax";
+import type { ScrollbarOptions } from "./modules/scrollbar";
+import type { ThumbsOptions } from "./modules/thumbs";
+import type { VirtualOptions } from "./modules/virtual";
+import type { ZoomOptions } from "./modules/zoom";
+import type { FreeModeOptions } from "./modules/free-mode";
+import type { GridOptions } from "./modules/grid";
 
-import type { CSSSelector, SwiperModule } from './shared.d.ts';
-import type { SwiperEvents } from './swiper-events.d.ts';
+import type { CSSSelector, SwiperModule } from "./shared";
+import type { SwiperEvents } from "./swiper-events";
 
 export interface SwiperOptions {
   /**
@@ -90,7 +90,7 @@ export interface SwiperOptions {
    *
    * @default 'horizontal'
    */
-  direction?: 'horizontal' | 'vertical';
+  direction?: "horizontal" | "vertical";
 
   /**
    * When enabled, will swipe slides only forward (one-way) regardless of swipe direction
@@ -210,7 +210,15 @@ export interface SwiperOptions {
    *
    * @default 'slide'
    */
-  effect?: 'slide' | 'fade' | 'cube' | 'coverflow' | 'flip' | 'creative' | 'cards' | string;
+  effect?:
+    | "slide"
+    | "fade"
+    | "cube"
+    | "coverflow"
+    | "flip"
+    | "creative"
+    | "cards"
+    | string;
 
   /**
    * Fire Transition/SlideChange/Start/End events on swiper initialization.
@@ -323,7 +331,7 @@ export interface SwiperOptions {
    *
    * @default 1
    */
-  slidesPerView?: number | 'auto';
+  slidesPerView?: number | "auto";
 
   /**
    * If total number of slides less than specified here value, then Swiper will enable `backface-visibility: hidden` on slide elements to reduce visual "flicker" in Safari.
@@ -413,7 +421,7 @@ export interface SwiperOptions {
    *
    * @default 'wrapper'
    */
-  touchEventsTarget?: 'container' | 'wrapper';
+  touchEventsTarget?: "container" | "wrapper";
 
   /**
    * Touch ratio
@@ -741,7 +749,7 @@ export interface SwiperOptions {
    *
    * @default 'window'
    */
-  breakpointsBase?: 'window' | 'container' | CSSSelector;
+  breakpointsBase?: "window" | "container" | CSSSelector;
 
   // Observer
   /**
