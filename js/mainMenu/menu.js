@@ -1,4 +1,4 @@
-async function menu() {
+async function mainMenu() {
   let mainMenu = "";
   let data = await fetch("https://alisasa1379.github.io/dbJson/db.json");
   let res = await data.json();
@@ -31,4 +31,4 @@ async function mainBtns() {
     .insertAdjacentHTML("afterbegin", mainBtns.join(""));
 }
 
-export default {menu,mainBtns};
+export default {mainMenu,mainBtns};

@@ -1,4 +1,4 @@
-import Menu from "./Menu/menu.js";
+import Menu from "./mainMenu/menu.js";
 import products from "./products/products.js";
 import slider from "./slider/slider.js";
 
@@ -11,7 +11,7 @@ async function allData(){
 allData()
 
 async function swiper() {
-  await Menu.menu();
+  await Menu.mainMenu();
   await Menu.mainBtns();
   await slider()
 
