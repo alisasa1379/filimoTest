@@ -1,0 +1,7 @@
+@import "./settings.css";
+@import "./mobile/mobile.css" only screen and (min-width:0px); 
+@import "./desktop/desktop.css" only screen and (min-width:992px); 
+
+:root{
+    --mainBg: #2b2b2b;
+}

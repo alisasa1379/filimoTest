@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./node_modules/swiper/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <div id="app">
+      <!-- menu -->
+      <header>
+        <nav>
+          <div class="mainMenu" id="mainMenu">
+            <ul></ul>
+          </div>
+          <div class="groupBtns" id="groupBtns"></div>
+        </nav>
+      </header>
+      <!-- end menu -->
+      <!-- slider -->
+      <div class="slider">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="swiper-wrapper">
+          </div>
+        </div>
+      </div>
+      <!-- end slider -->
+       <!-- products -->
+        <div class="products" id="products"></div>
+       <!-- end products -->
+    </div>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./node_modules/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
